@@ -42,7 +42,7 @@ app.get('/api/events', (req, res) => {
         }
     })
     pastEvents.reverse()
-    // past events are now shown from newest to oldest
+    // past events are now shown from the most recent to oldest
     res.json({upcomingEvents, pastEvents})
   })
     .catch((error) => {
