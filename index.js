@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const axios = require('axios')
+const cors = require('cors')
 require('dotenv').config()
 
 const { CAL_ID, API_KEY } = process.env
@@ -14,8 +15,10 @@ const formatDateTime = (dateTimeString) => {
   }
 }
 
+app.use(cors())
+
 app.get('/', (request, response) => {
-    response.send('<h1>how did you end up in here?</h1>')
+    response.send('<h2>how did you end up in here?</h2>')
   })
 
 app.get('/api/events', (req, res) => {
