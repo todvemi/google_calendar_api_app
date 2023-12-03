@@ -42,7 +42,7 @@ app.get('/api/events', (req, res) => {
         }
     })
     pastEvents.reverse()
-    // past events are now shown from the most recent to oldest
+    // past events are now shown from the most recent to the oldest
     res.json({upcomingEvents, pastEvents})
   })
     .catch((error) => {
@@ -51,7 +51,7 @@ app.get('/api/events', (req, res) => {
     })
 })
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })

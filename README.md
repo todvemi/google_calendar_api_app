@@ -1,6 +1,6 @@
 # Node.js Google Calendar API App
 
-This Node.js application is designed to fetch Google Calendar events from the Google Calendar API and serve them as JSON. The events are organized into two lists: upcoming events and past events. This information can be utilized on the frontend to display a list of events for users.
+This minimalist Node.js application is designed to fetch Google Calendar events from the Google Calendar API and serve them as JSON. The events are organized into two lists: upcoming events and past events. This information can be utilized on the frontend to display a list of events for users. This particular version is used to serve events for the frontend to display upcoming and past gigs on a musician's personal website.
 
 ## Getting Started
 
@@ -35,7 +35,7 @@ Before you begin, make sure you have the following installed:
 
 1. Create a project on the [Google Developers Console](https://console.developers.google.com/).
 2. Enable the Google Calendar API for your project.
-3. In your project, store the API key and Calendar ID in enviroment variable
+3. In your project, store the API key and Calendar ID in environment variables.
 
 ### Usage
 
@@ -52,7 +52,7 @@ Before you begin, make sure you have the following installed:
 Integrate the JSON data into your frontend to display upcoming and past events to users.
 
 API endpoint:
-- All events: `http://localhost:3000/api/events`
+- All events: `http://localhost:3001/api/events`
 
 ### Notes
 
